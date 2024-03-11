@@ -198,7 +198,7 @@ export default function Home() {
                 >
                   {/* Search input bar */}
                   <div className="flex">
-                    <h1 className="border-transparent w-full  px-0 py-0 mx-1">Select a token</h1>
+                    <h1 className="border-transparent w-full text-gray-200 px-0 py-0 mx-1">Select a token</h1>
                     <button
                       type="button"
                       onClick={toggleDropdown1}
@@ -222,7 +222,7 @@ export default function Home() {
                   </div>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 border-hidden sticky top-0  bg-customColor2 border-transparent rounded-full border-gray-300 focus:outline-none"
+                    className="w-full px-4 py-2 border-hidden sticky top-0 text-gray-200  bg-customColor2 border-transparent rounded-full border-gray-300 focus:outline-none"
                     placeholder="Search..."
                     value={cryptoSearchQuery}
                     onChange={handleCryptoSearchChange}
