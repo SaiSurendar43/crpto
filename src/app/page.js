@@ -160,7 +160,7 @@ export default function Home() {
               name="amount"
               className={`bg-customColor1 border ${
                 errors?.amount ? "border-red-300" : "border-transparent"
-              } h-36    w-full rounded-md  pl-7 flex items-center pr-20 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-transparent sm:text-sm sm:leading-6`}
+              } h-36    w-full rounded-md  pl-7 flex items-center pr-20 placeholder:text-gray-400 text-gray-200 focus:ring-2 focus:ring-inset focus:ring-transparent sm:text-sm sm:leading-6`}
               placeholder="0.00"
             />
             {errors?.amount && (
@@ -263,7 +263,7 @@ export default function Home() {
               name="price"
               id="price"
               value={estimatedAmount}
-              className="bg-customColor1 border border-transparent h-36  w-full rounded-md py-1.5 pl-7 pr-20 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-transparent sm:text-sm sm:leading-6 text-sm"
+              className="bg-customColor1 border border-transparent h-36  w-full rounded-md py-1.5 pl-7 pr-20 placeholder:text-gray-400 text-gray-200 focus:ring-2 focus:ring-inset focus:ring-transparent sm:text-sm sm:leading-6 text-sm"
               placeholder="0.00"
             />
             <div className="absolute mr-2 inset-y-0 right-0 flex items-center">
@@ -342,7 +342,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="text-sm">${estimatedAmount}</p>
+        <p className="text-sm text-gray-200">${estimatedAmount}</p>
         {/* Swap button */}
         <button
           onClick={handleSubmit(handleSwap)}
